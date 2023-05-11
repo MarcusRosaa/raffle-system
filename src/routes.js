@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Sidebar from './components/Dashboard/Sidebar';
 import Purchasers from './components/Dashboard/Purchasers';
 import RafflesList from './components/Dashboard/RafflesList';
+import Terms from './pages/Terms';
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: 'sorteios',
+    path: '/sorteios',
     element: (
       <>
         <Header />
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: 'ganhadores',
+    path: '/ganhadores',
     element: (
       <>
         <Header />
@@ -51,7 +52,13 @@ export const router = createBrowserRouter([
   },
   {
     path: '/termos',
-    element: <div>termos</div>,
+    element: (
+      <>
+        <Header />
+        <Terms />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/dashboard',
