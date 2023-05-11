@@ -11,17 +11,33 @@ export const Steps = styled.div`
 export const StepsList = styled.ul`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 16px 32px;
   list-style: none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 16px 32px;
+
+
+  @media (min-width: 800px) {
+  flex-direction: row;
+  padding: 48px 16px 32px;
   justify-content: space-between;
+  align-items: start;
+  gap: 0;
+  }
 `;
 
 export const StepsItem = styled.li`
-  width: calc(25% - 32px);
   color: white;
   position: relative;
-  height: 100%;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: 800px) {
+    width: calc(25% - 32px);
+    height: 100%;
+  }
 
   h3 {
     font-size: var(--fsize-xl);

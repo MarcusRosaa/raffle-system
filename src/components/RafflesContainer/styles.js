@@ -42,7 +42,6 @@ export const CardList = styled.ul`
 export const ListItem = styled.li`
   color: white;
   display: flex;
-
   max-width: 100%;
 
   @media (min-width: 980px) {
@@ -75,6 +74,7 @@ export const ListItem = styled.li`
     display: flex;
     text-decoration: none;
     color: inherit;
+    width: 100%;
   }
 `;
 
