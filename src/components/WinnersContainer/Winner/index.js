@@ -15,7 +15,7 @@ export default function Winner({ winner }) {
       </div>
       <div className="InfosContainer">
         <ItemStatus place={winner.place}>
-          <p>{winner.place ? winner.place : 'vencedor único'}</p>
+          <p>{winner.place ? `${winner.place}º` : 'vencedor único'}</p>
         </ItemStatus>
         <ItemTitle>{winner.description}</ItemTitle>
         <ItemName>{winner.name}</ItemName>

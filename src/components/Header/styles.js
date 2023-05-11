@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 `;
 
 export const Logotipo = styled.h1`
@@ -40,5 +39,10 @@ export const ListItem = styled.li`
     font-size: var(--fsize-regular);
     font-weight: 700;
     text-transform: uppercase;
+    transition: color .1s ease-in;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.green.main};
+    }
   }
 `;

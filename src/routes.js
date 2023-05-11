@@ -10,6 +10,7 @@ import Sidebar from './components/Dashboard/Sidebar';
 import Purchasers from './components/Dashboard/Purchasers';
 import RafflesList from './components/Dashboard/RafflesList';
 import Terms from './pages/Terms';
+import Purchases from './pages/Purchases';
 
 export const router = createBrowserRouter([
   {
@@ -44,11 +45,27 @@ export const router = createBrowserRouter([
   },
   {
     path: '/pedidos',
-    element: <div>meus pedidos</div>,
+    element: (
+      <>
+        <Header />
+        <Purchases />
+        <Footer />
+      </>
+    ),
   },
   {
-    path: '/sobre',
-    element: <div>sobre</div>,
+    path: '/pedidos/:id',
+    element: (
+      <>
+        <Header />
+        <p>pedido por id</p>
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/sorteios/:id',
+    element: <div>pdp</div>,
   },
   {
     path: '/termos',
@@ -61,11 +78,15 @@ export const router = createBrowserRouter([
     ),
   },
   {
+    path: '/sobre',
+    element: <div>sobre</div>,
+  },
+  {
     path: '/dashboard',
     element: (
       <>
         <Sidebar />
-        <Dashboard onAddRaffle />
+        <Dashboard />
       </>
     ),
   },

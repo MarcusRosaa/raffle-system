@@ -18,7 +18,7 @@ export default function WinnersContainer() {
         <Subtitle>Últimos ganhadores dos sorteios</Subtitle>
 
         <CardList>
-          {winnersData.map((raffle) => (
+          {winnersData && winnersData.map((raffle) => (
             <div key={raffle.id} className="RaffleWrapper">
               <h2 className="RaffleTitle">{raffle.title}</h2>
               {raffle.winners.length > 0 ? (
@@ -30,6 +30,9 @@ export default function WinnersContainer() {
               )}
             </div>
           ))}
+          {
+            !winnersData.length && (<i>Nenhum ganhador foi registrado até o momento.</i>)
+          }
         </CardList>
       </Wrapper>
     </Container>
