@@ -84,7 +84,7 @@ export default function Footer() {
         </NavigationList>
       </Navigation>
       <Copywright>
-        <p>© 2023 - Todos os direitos reservados | Desenvolvido por Front-End Lab</p>
+        <p>© 2023 - Todos os direitos reservados</p>
       </Copywright>
     </Container>
   );

@@ -9,7 +9,7 @@ export default {
     },
     gray: {
       dark: '#161616',
-      light: '#bcbcbc',
+      light: '#1C1C1C',
     },
     danger: {
       light: '#f97171',
@@ -18,6 +18,8 @@ export default {
     },
     green: {
       main: '#1fbd0a',
+      light: '#86efaccc',
+      dark: '#14532d',
     },
   },
 };

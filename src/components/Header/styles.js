@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.header`
-  background: ${({ theme }) => theme.colors.gray.dark};
+  background: black;
   color: white;
   width: 100%;
 `;

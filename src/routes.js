@@ -1,19 +1,45 @@
 import { createBrowserRouter } from 'react-router-dom';
 import RafflesContainer from './components/RafflesContainer';
 import Home from './pages/Home';
+import Winners from './pages/Winners';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Dashboard from './pages/Dashboard';
+import Sidebar from './components/Dashboard/Sidebar';
+import Purchasers from './components/Dashboard/Purchasers';
+import RafflesList from './components/Dashboard/RafflesList';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
-    path: '/sorteios',
-    element: <RafflesContainer />,
+    path: 'sorteios',
+    element: (
+      <>
+        <Header />
+        <RafflesContainer />
+        <Footer />
+      </>
+    ),
   },
   {
-    path: '/ganhadores',
-    element: <div>ganhadores</div>,
+    path: 'ganhadores',
+    element: (
+      <>
+        <Header />
+        <Winners />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/pedidos',
@@ -26,5 +52,32 @@ export const router = createBrowserRouter([
   {
     path: '/termos',
     element: <div>termos</div>,
+  },
+  {
+    path: '/dashboard',
+    element: (
+      <>
+        <Sidebar />
+        <Dashboard onAddRaffle />
+      </>
+    ),
+  },
+  {
+    path: '/dashboard/rifas',
+    element: (
+      <>
+        <Sidebar />
+        <RafflesList />
+      </>
+    ),
+  },
+  {
+    path: '/dashboard/compradores',
+    element: (
+      <>
+        <Sidebar />
+        <Purchasers />
+      </>
+    ),
   },
 ]);

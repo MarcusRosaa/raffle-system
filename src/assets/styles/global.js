@@ -22,6 +22,7 @@ export default createGlobalStyle`
   body {
     font-size: 16px;
     background: #f0f0f0;
+    user-select: none;
   }
 
   button {
