@@ -12,14 +12,17 @@ export const Wrapper = styled.div`
 `;
 
 export const Product = styled.div`
-
+  display: flex;
+  align-items: start;
 `;
 
 export const ProductContent = styled.div`
-
+  width: 50%;
 `;
 
 export const ProductCarousel = styled.div`
+  width: 50%;
+  
   .bigImage {
     max-width: 500px;
     width: 100%;
