@@ -21,7 +21,44 @@ export const Logotipo = styled.h1`
 `;
 
 export const Navigation = styled.nav`
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 16px 0 32px 32px;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  background: ${({ theme }) => theme.colors.gray.light};
+  border: 1px solid #6666667a;
 
+  display: ${({ menuIsOpen }) => (
+    menuIsOpen
+      ? 'block'
+      : 'none'
+  )};
+
+  @media (min-width: 980px) {
+    display: block;
+    border: none;
+    position: relative;
+    background: none;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin: 0;
+
+    @media (min-width: 980px) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  }
 `;
 
 export const List = styled.ul`
@@ -30,8 +67,13 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  padding: 16px 0;
 
-  margin-left: 48px;
+  @media (min-width: 980px) {
+    margin-left: 48px;
+    padding: 0;
+
+  }
 
   a {
     text-decoration: none;
@@ -44,5 +86,23 @@ export const ListItem = styled.li`
     &:hover {
       color: ${({ theme }) => theme.colors.green.main};
     }
+  }
+`;
+
+export const HamburgerMenu = styled.span`
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: end;
+  padding-right: 16px;
+
+
+  @media (min-width: 980px) {
+    display: none;
+  }
+
+  svg {
+    width: 28px;
+    height: 28px;
   }
 `;

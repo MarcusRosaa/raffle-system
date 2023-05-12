@@ -7,11 +7,11 @@ const purchasersData = [
     raffle_numbers: ['1', '2'],
     raffle_totals: 2,
     raffle_id: '321sdfsdfs',
-    raffle_name: 'gol bolinha 2018',
+    raffle_name: '1° GOL G4 1.0 COMPLETÃO / 2° IPHONE 13 LACRADO OU 4K.. SÃO 2 CHANCES DE GANHAR!',
     purchase_status: true,
     imageUrl: 'https://placehold.co/130x130',
     price: 12,
-    purchase_date: 'aaa',
+    purchase_date: 'mm/dd/aa',
   },
   {
     id: 'purchase_002',
@@ -24,7 +24,7 @@ const purchasersData = [
     raffle_name: 'teste 2',
     purchase_status: false,
     price: 12,
-    purchase_date: 'bbb',
+    purchase_date: 'mm/dd/aa',
     imageUrl: 'https://placehold.co/130x130',
   },
   {
@@ -38,7 +38,7 @@ const purchasersData = [
     raffle_name: 'teste 3',
     purchase_status: true,
     price: 6.60,
-    purchase_date: 'cc',
+    purchase_date: 'mm/dd/aa',
     imageUrl: 'https://placehold.co/130x130',
   },
 ];

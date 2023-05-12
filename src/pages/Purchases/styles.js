@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
   background: ${({ theme }) => theme.colors.gray.light};
-  /* min-height: calc(100vh - 250px); */
+  min-height: calc(100vh - 250px);
 
   form {
     max-width: 1200px;
@@ -55,6 +55,7 @@ export const ListItem = styled.li`
 
 export const ThumbContainer = styled.div`
   margin-right: 8px;
+  margin-bottom: 8px;
 
   img {
     width: 130px;
@@ -62,7 +63,6 @@ export const ThumbContainer = styled.div`
     object-fit: cover;
     border-radius: 5px;
   }
-  margin-bottom: 8px;
 `;
 
 export const ContentContainer = styled.div`
@@ -75,6 +75,7 @@ export const Title = styled.h2`
   font-size: var(--fsize-regular);
   font-weight: 500;
   margin-bottom: 8px;
+  color: white;
 `;
 
 export const Date = styled.p`

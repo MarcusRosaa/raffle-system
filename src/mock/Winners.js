@@ -1,7 +1,7 @@
 const winnersData = [
   {
     id: '32343',
-    title: 'rifa do gol bolinha 2018',
+    title: '1° GOL G4 1.0 COMPLETÃO / 2° IPHONE 13 LACRADO OU 4K.. SÃO 2 CHANCES DE GANHAR!',
     winners: [
       {
         id: 'winner_id_1',

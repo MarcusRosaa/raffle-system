@@ -11,6 +11,8 @@ import Purchasers from './components/Dashboard/Purchasers';
 import RafflesList from './components/Dashboard/RafflesList';
 import Terms from './pages/Terms';
 import Purchases from './pages/Purchases';
+import PurchaseDetails from './pages/PurchaseDetails';
+import ProductPage from './pages/ProductPage';
 
 export const router = createBrowserRouter([
   {
@@ -58,14 +60,20 @@ export const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <p>pedido por id</p>
+        <PurchaseDetails />
         <Footer />
       </>
     ),
   },
   {
     path: '/sorteios/:id',
-    element: <div>pdp</div>,
+    element: (
+      <>
+        <Header />
+        <ProductPage />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/termos',

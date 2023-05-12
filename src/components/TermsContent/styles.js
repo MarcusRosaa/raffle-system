@@ -1,11 +1,15 @@
 import { styled } from 'styled-components';
 
-export const Container = styled.main`
-  padding: 60px 0;
-  font-size: 18px;
-  color: #333;
-  line-height: 1.5;
-  background-color: ${({ theme }) => theme.colors.gray.light};
+export const TermsList = styled.ul`
+  list-style: none;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  li {
+    margin-bottom: 10px;
+  }
 
   h2 {
     font-size: var(--fsize-l);

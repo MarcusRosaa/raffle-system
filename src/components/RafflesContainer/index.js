@@ -21,7 +21,7 @@ export default function RafflesContainer() {
           {
             RafflesData[0].raffles.map((raffle) => (
               <ListItem key={raffle.id}>
-                <Link to="/sorteios">
+                <Link to="/sorteios/:id">
                   <div className="ThumbContainer">
                     <Image src={raffle.imageUrl} />
                   </div>

@@ -18,6 +18,7 @@ import {
   Title,
   TitleForm,
 } from './styles';
+import formatPhone from '../../utils/formatPhone';
 
 export default function Purchases() {
   const [phone, setPhone] = useState('');
@@ -37,7 +38,7 @@ export default function Purchases() {
 
   return (
     <MainContainer>
-      <form onSubmit={handleSearch} noValidate>
+      <form onSubmit={handleSearch}>
         <TitleForm>
           <h3>Buscar Pedidos</h3>
           <p>Nos informe o número de telefone para consultar informações sobre os seus pedidos.</p>
@@ -48,7 +49,11 @@ export default function Purchases() {
             type="tel"
             id="phone-input"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e) => setPhone(formatPhone(e.target.value))}
+            required
+            maxLength={15}
+            minLength={14}
+            placeholder="(__) _ ____-____"
           />
           <button type="submit">Buscar</button>
         </Input>
