@@ -21,6 +21,7 @@ export default {
       main: '#1fbd0a',
       light: '#86efaccc',
       dark: '#14532d',
+      pdp: '#25A349',
     },
   },
 };

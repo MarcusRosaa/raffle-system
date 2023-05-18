@@ -1,12 +1,22 @@
 import React from 'react';
 import {
-  Container, Product, ProductCarousel, ProductContent, Wrapper,
+  Container,
+  Price,
+  Product,
+  ProductCarousel,
+  ProductContent,
+  Wrapper,
+  Title,
+  InfoSubtitle,
+  InfoTitle,
 } from './styles';
 import Regulament from '../../components/Regulament';
 import TermsContent from '../../components/TermsContent';
-import { Title } from '../../components/WinnersContainer/styles';
 // import Carousel from '../../components/Carousel';
 import RafflesData from '../../mock/Raffles';
+import Share from '../../components/Share';
+import BuyPack from '../../components/BuyRafflesPack';
+import BuyRaffles from '../../components/BuyRaffles';
 
 export default function ProductPage() {
   return (
@@ -20,29 +30,22 @@ export default function ProductPage() {
 
           <ProductContent>
             <Title>
-              {RafflesData[0].title}
+              {RafflesData[0].raffles[0].title}
             </Title>
-            <Medias>
-                <div className="flex items-center">
-                  <a target="_blank" href="/" className="p-2 bg-[#4267B2] flex items-center justify-center rounded cursor-pointer mr-1" rel="noreferrer">
-                    <i className="fab fa-facebook text-white text-2xl" aria-hidden="true" />
-                  </a>
-                  <a target="_blank" href="/" className="p-2 bg-[#0088CC] flex items-center justify-center rounded cursor-pointer mr-1" rel="noreferrer">
-                    <i className="fab fa-telegram text-white text-2xl" aria-hidden="true" />
-                  </a>
-
-                  <a href="/" target="_blank" className="p-2 bg-[#1DA1F2] flex items-center justify-center rounded cursor-pointer mr-1" rel="noreferrer">
-                    <i className="fab fa-twitter text-white text-2xl" aria-hidden="true" />
-                  </a>
-
-                  <a target="_blank" href="/" className="p-2 bg-[#25D366] flex items-center justify-center rounded cursor-pointer mr-1" rel="noreferrer">
-                    <i className="fab fa-whatsapp text-white text-2xl" aria-hidden="true" />
-                  </a>
-                </div>
-            </Medias>
+            <Share />
             <Price>
-              1.99
+              R$ 1.99
             </Price>
+            <BuyPack />
+
+            <InfoTitle>
+              COMPRA AUTOMÁTICA
+            </InfoTitle>
+            <InfoSubtitle>
+              O site escolhe números aleatórios para você.
+            </InfoSubtitle>
+
+            <BuyRaffles />
           </ProductContent>
         </Product>
         <Regulament />

@@ -5,12 +5,13 @@ const RafflesData = [
     subtitle: 'Seu sonho bem pertinho de você',
     raffles: [
       {
-        title: 'Raffle 1',
+        title: '1° GOL G4 1.0 COMPLETÃO / 2° IPHONE 13 LACRADO OU 4K.. SÃO 2 CHANCES DE GANHAR!',
         id: '123',
         unitPrice: 10,
         stock: 5,
         imageUrl: 'https://placehold.co/130x130',
         price: 23,
+        discount: 10,
       },
       {
         title: 'Raffle 2',

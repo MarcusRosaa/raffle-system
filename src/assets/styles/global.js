@@ -8,6 +8,13 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 
+  ul {
+    list-style: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 0;
+  }
   :root {
     // Font Sizes
     --fsize-xxs: 10px;
