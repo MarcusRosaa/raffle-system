@@ -33,7 +33,7 @@ export default function Header() {
     <Container>
       <Wrapper>
         <Logotipo>Logotipo</Logotipo>
-        <Navigation menuIsOpen={menuIsOpen}>
+        <Navigation menuisopen={menuIsOpen ? menuIsOpen.toString() : undefined}>
           <HamburgerMenu onClick={toggleMenu}>
             {menuIsOpen ? <IoClose /> : <IoMenuOutline />}
           </HamburgerMenu>

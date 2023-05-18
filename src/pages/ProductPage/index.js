@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Price,
@@ -9,6 +10,7 @@ import {
   Title,
   InfoSubtitle,
   InfoTitle,
+  SeeNumbers,
 } from './styles';
 import Regulament from '../../components/Regulament';
 import TermsContent from '../../components/TermsContent';
@@ -46,6 +48,9 @@ export default function ProductPage() {
             </InfoSubtitle>
 
             <BuyRaffles />
+            <SeeNumbers>
+              <Link to="/pedidos">Ver meus números</Link>
+            </SeeNumbers>
           </ProductContent>
         </Product>
         <Regulament />

@@ -33,8 +33,8 @@ export const Navigation = styled.nav`
   background: ${({ theme }) => theme.colors.gray.light};
   border: 1px solid #6666667a;
 
-  display: ${({ menuIsOpen }) => (
-    menuIsOpen
+  display: ${({ menuisopen }) => (
+    menuisopen
       ? 'block'
       : 'none'
   )};

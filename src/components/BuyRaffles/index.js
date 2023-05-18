@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
+import { CgMathPlus, CgMathMinus, CgShoppingCart } from 'react-icons/cg';
+// import { Link } from 'react-router-dom';
 import {
-  Container, Discount, List, ListItem,
+  Container,
+  Discount,
+  Error,
+  List,
+  ListItem,
+  QuantityField, QuantitySelector, BuyButton,
 } from './styles';
 import RafflesData from '../../mock/Raffles';
 
@@ -37,6 +44,7 @@ export default function BuyRaffles() {
         }
       </Discount>
       )}
+      <Error>A quantidade máxima de números por pedido é 40.</Error>
       <p className="preSelectTitle">Selecione múltiplas quantidades em um clique</p>
       <List>
         <ListItem>
@@ -52,6 +60,22 @@ export default function BuyRaffles() {
           + 20 SELECIONAR
         </ListItem>
       </List>
+      <QuantitySelector>
+        <button className="selector" type="button">
+          <CgMathPlus />
+        </button>
+        <QuantityField />
+        <button className="selector" type="button">
+          <CgMathMinus />
+        </button>
+      </QuantitySelector>
+
+      <BuyButton>
+        Comprar
+        {' '}
+        <CgShoppingCart />
+        {' '}
+      </BuyButton>
     </Container>
   );
 }

@@ -86,3 +86,20 @@ export const InfoSubtitle = styled.p`
   color: white;
   margin: 8px 0;
 `;
+
+export const SeeNumbers = styled.div`
+  background: ${({ theme }) => theme.colors.green.main};
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+`;
