@@ -1,0 +1,176 @@
+const RafflesData = [
+  {
+    rafflesId: "raffles-01",
+    rafflesFaturing: 17039.03,
+    rafflesStock: 500,
+    rafflesCurrentStock: 350,
+    rafflesQuota: 1.19,
+    rafflesDescounts: {
+      descounIfTen: 2,
+      descounIfTwenty: 4,
+      descounIfThird: 6,
+      descounIfForty: 8,
+    },
+    rafflesDate: "25/04/24",
+    rafflesTitle: "Grandes prêmios",
+    rafflesSubtitle:
+      "Seu sonho bem pertinho de você, garanta já suas cotas por um valor promocional",
+    rafflesAwards: [
+      {
+        awardId: "award-01",
+        awardTitle: "FORD KA ZERO KM",
+      },
+      {
+        awardId: "award-02",
+        awardTitle: "FAN 160 ZERO KM",
+      },
+      {
+        awardId: "award-03",
+        awardTitle: "IPHONE 13 OU 4 MIL NO PIX",
+      },
+    ],
+    rafflesImages: [
+      "/images/raffle_image_01.jpeg",
+      "/images/raffle_image_02.jpeg",
+      "/images/raffle_image_03.jpeg",
+    ],
+    rafflesBuyers: [
+      {
+        buyerId: "buyer-01",
+        buyerName: "Henrique Garcia",
+        buyerNumber: "51993077788",
+        buyerDate: "Sexta-feira, 25 de março às 17:34",
+        buyerQuantity: 10,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-02",
+        buyerName: "Ana Paula Santos",
+        buyerNumber: "51981756349",
+        buyerDate: "Terça-feira, 12 de julho às 09:20",
+        buyerQuantity: 30,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-03",
+        buyerName: "Lucas Oliveira",
+        buyerNumber: "51992345678",
+        buyerDate: "Quinta-feira, 19 de maio às 14:56",
+        buyerQuantity: 35,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-04",
+        buyerName: "Maria Fernanda Silva",
+        buyerNumber: "51991234567",
+        buyerDate: "Segunda-feira, 2 de janeiro às 20:10",
+        buyerQuantity: 24,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-05",
+        buyerName: "Gustavo Rodrigues",
+        buyerNumber: "51988776655",
+        buyerDate: "Sábado, 30 de setembro às 11:45",
+        buyerQuantity: 17,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-06",
+        buyerName: "Carla Mendes",
+        buyerNumber: "51994433221",
+        buyerDate: "Domingo, 5 de agosto às 16:30",
+        buyerQuantity: 26,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+    ],
+  },
+  {
+    rafflesId: "raffles-02",
+    rafflesFaturing: 17039.03,
+    rafflesStock: 1000,
+    rafflesCurrentStock: 750,
+    rafflesQuota: 1.19,
+    rafflesDescounts: {
+      descounIfTen: 2,
+      descounIfTwenty: 4,
+      descounIfThird: 6,
+      descounIfForty: 8,
+    },
+    rafflesDate: "25/04/24",
+    rafflesTitle: "Grandes prêmios",
+    rafflesSubtitle:
+      "Seu sonho bem pertinho de você, garanta já suas cotas por um valor promocional",
+    rafflesAwards: [
+      {
+        awardId: "award-11",
+        awardTitle: "FORD KA ZERO KM",
+      },
+      {
+        awardId: "award-12",
+        awardTitle: "FAN 160 ZERO KM",
+      },
+      {
+        awardId: "award-13",
+        awardTitle: "IPHONE 13 OU 4 MIL NO PIX",
+      },
+    ],
+    rafflesImages: [
+      "/images/raffle_image_01.jpeg",
+      "/images/raffle_image_02.jpeg",
+      "/images/raffle_image_03.jpeg",
+    ],
+    rafflesBuyers: [
+      {
+        buyerId: "buyer-11",
+        buyerName: "Henrique Garcia",
+        buyerNumber: "51993077788",
+        buyerDate: "Sexta-feira, 25 de março às 17:34",
+        buyerQuantity: 10,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-12",
+        buyerName: "Ana Paula Santos",
+        buyerNumber: "51981756349",
+        buyerDate: "Terça-feira, 12 de julho às 09:20",
+        buyerQuantity: 30,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-13",
+        buyerName: "Lucas Oliveira",
+        buyerNumber: "51992345678",
+        buyerDate: "Quinta-feira, 19 de maio às 14:56",
+        buyerQuantity: 35,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-14",
+        buyerName: "Maria Fernanda Silva",
+        buyerNumber: "51991234567",
+        buyerDate: "Segunda-feira, 2 de janeiro às 20:10",
+        buyerQuantity: 24,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-15",
+        buyerName: "Gustavo Rodrigues",
+        buyerNumber: "51988776655",
+        buyerDate: "Sábado, 30 de setembro às 11:45",
+        buyerQuantity: 17,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+      {
+        buyerId: "buyer-16",
+        buyerName: "Carla Mendes",
+        buyerNumber: "51994433221",
+        buyerDate: "Domingo, 5 de agosto às 16:30",
+        buyerQuantity: 26,
+        buyerTotalPurchaseAmount: 45.25,
+      },
+    ],
+  },
+];
+
+export default RafflesData;

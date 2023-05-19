@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App/index';
-import { AdminProvider } from './Context/Admin';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import GlobalStyles from "./assets/styles/global";
+
+import { ViewsProvider } from "./contexts/ViewsContext";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AdminProvider>
+    <GlobalStyles />
+    <ViewsProvider>
       <App />
-    </AdminProvider>
-  </React.StrictMode>,
+    </ViewsProvider>
+  </React.StrictMode>
 );
